@@ -131,13 +131,13 @@
       s">
         <!-- info ......................-->
         <div class=" ">
-          <div class="space-y-6 text-center lg:text-start">
+          <div class="space-y-6 text-center lg:text-start mb-6">
             <a href="" class="text-para-color font-bold bg-white py-2 px-4 rounded-3xl">
               <i class="fa-solid fa-arrow-right"></i>
               About Us</a>
             <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl text-heading-color">We design thoughtful, liveable
               spaces</h2>
-            <p class="font-medium text-sm sm:text-base text-para-color ">The barn house captivates with
+            <p class="font-medium text-sm sm:text-base text-para-color">The barn house captivates with
               its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
@@ -433,16 +433,12 @@
       </div>
       <!-- form -->
       <form class="w-11/12 sm:w-3/5 mx-auto grid grid-cols-1 sm:grid-cols-2 grid-rows-5 gap-6">
-        <input type="text" placeholder="First Name *"
-        class="py-5 px-4 rounded-3xl  font-medium outline-none">
-        <input type="text" placeholder="Last Name *"
-        class="py-5 px-4 rounded-3xl  font-medium outline-none">
-        <input type="number" placeholder="Phone Number *"
-        class="py-5 px-4 rounded-3xl  font-medium outline-none">
-        <input type="email" placeholder="Email *"
-        class="py-5 px-4 rounded-3xl font-medium outline-none">
+        <input type="text" placeholder="First Name *" class="py-5 px-4 rounded-3xl  font-medium outline-none">
+        <input type="text" placeholder="Last Name *" class="py-5 px-4 rounded-3xl  font-medium outline-none">
+        <input type="number" placeholder="Phone Number *" class="py-5 px-4 rounded-3xl  font-medium outline-none">
+        <input type="email" placeholder="Email *" class="py-5 px-4 rounded-3xl font-medium outline-none">
         <textarea name="" id="" placeholder="Write your message here"
-        class="py-5 px-4 rounded-3xl  font-medium outline-none col-span-full row-span-2"></textarea>
+          class="py-5 px-4 rounded-3xl  font-medium outline-none col-span-full row-span-2"></textarea>
         <div class="py-3 px-5 col-span-full bg-custom-bg font-extrabold text-xl text-center rounded-3xl cursor-pointer">
           <input type="submit" value="Send Mail"><i
             class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-3xl -rotate-45 ml-2 "></i>
@@ -450,38 +446,33 @@
       </form>
     </section>
   </main>
-
   <!-- footer -->
-  <footer>
-
+  <footer class="bg-black py-24 space-y-8 sm:space-y-10">
+    <!--form heading -->
+    <div class="text-center  w-11/12 sm:w-2/4 mx-auto ">
+      <h2 class="font-extrabold text-3xl text-[#E9E9E9] mb-4">
+        <span class="bg-custom-bg text-3xl px-2 rounded-[32px]"><i class="fa-solid fa-arrow-right  
+                  text-black -rotate-45 "></i></span>
+        Rinterio
+      </h2>
+      <p class="font-medium text-base  text-[#737373]">The barn house captivates with its blend of rustic
+        charm and modern sophistication, featuring weathered wood, sleek
+        metal accents.</p>
+    </div>
+    <div class="w-11/12 sm:w-2/4 mx-auto">
+      <ul class="flex flex-col items-center gap-8 sm:flex-row sm:justify-between font-normal text-base text-[#E9E9E9]">
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <a href="#" class="bg-custom-bg p-3 rounded-3xl mx-auto  text-center block w-fit">
+      <span class="text-[#1C1C1C] font-extrabold text-xl">Book Consult</span>
+      <i class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-3xl -rotate-45"></i>
+    </a>
   </footer>
-  <div class="screen-size">
-    <h1>Screen Size</h1>
-    <p id="viewportSize">Viewport: -- x --</p>
-    <p id="fullScreenSize">Full Screen: -- x --</p>
-  </div>
-  <script>
-    function updateScreenSize() {
-      // Get viewport size (visible part of the window)
-      const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
-
-      // Get full screen size (entire display)
-      const fullScreenWidth = screen.width;
-      const fullScreenHeight = screen.height;
-
-      // Update the UI
-      document.getElementById('viewportSize').textContent = `Viewport: ${viewportWidth}px x ${viewportHeight}px`;
-      document.getElementById('fullScreenSize').textContent = `Full Screen: ${fullScreenWidth}px x ${fullScreenHeight}px`;
-    }
-
-    // Call the function initially
-    updateScreenSize();
-
-    // Update screen size on window resize
-    window.addEventListener('resize', updateScreenSize);
-  </script>
-
 </body>
 
 </html>
